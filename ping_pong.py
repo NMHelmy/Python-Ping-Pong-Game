@@ -22,7 +22,6 @@ racket1.shapesize(stretch_wid=5, stretch_len=1)  # stretching the shape from the
 racket1.penup()  # pulling pen up, stops the object from drawing lines when moving
 racket1.goto(-350, 0)  # sets the position of the object
 
-
 # racket 2
 racket2 = turtle.Turtle()
 racket2.speed(0)
@@ -61,8 +60,6 @@ text.hideturtle()
 text.goto(386, -286)
 text.write("*score 15 points*", align="right", font=("courier", 14, "italic"))
 
-
-# function heya el hathaded el le3ba hateshtaghal ezay
 def racket1_up():
     y = racket1.ycor()  # function in turtle module that gets the y coordinate of the object
     y += 20  # as you go up the object will move 20 pixels
@@ -93,18 +90,6 @@ wind.onkeypress(racket1_up, "w")  # when the w key (has to be lower case) is pre
 wind.onkeypress(racket1_down, "s")
 wind.onkeypress(racket2_up, "Up")  # arrow upward
 wind.onkeypress(racket2_down, "Down")  # arrow downward
-
-# while wind.onkeypress(racket1_up, "w") and wind.onkeypress(racket2_up, "Up"):
-#     racket1_up()
-#     racket2_up()
-
-# while wind.onkeypress(racket1_down, "s") and wind.onkeypress(racket2_down, "Down"):
-#     racket2_down()
-#     racket1_down()
-
-# while wind.onkeypress(racket1_down, "s") and wind.onkeypress(racket2_up, "Up"):
-#     racket2_down()
-#     racket1_down()
 
 # main game loop
 while True: # loop stops manually or until some external event like closing the window, interrupts the execution
